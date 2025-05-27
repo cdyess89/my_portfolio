@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Cortez Dyess
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          cdyess89@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+         470-269-5272 
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="Skills">Skills</a>
+          <a class="topmenu" href="Projects">Projects</a>
+          <a class="topmenu" href="Recommendations">Recommendations</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="tez-9612592_1280.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Cortez Dyess <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a dedicated firefighter paramedic with a strong commitment to public service and high-pressure decision-making.
+             My journey has taken me from saving lives in emergency situations to exploring my creative passion in culinary school, 
+             where I honed discipline and attention to detail. Now, I'm excited to transition into the world of full stack development, where I 
+             can combine my problem-solving mindset, adaptability, and drive for continuous learning to build impactful digital solutions. 
+             My diverse background has equipped me with a unique blend of resilience, teamwork, and technical curiosity — all of which I bring to my evolving career in tech.
+
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>Chef</h6>
+          <p>12 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Firefightert</h6>
+          <p>8 years experience</p>
+        </div>  
+         <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Management</h6>
+          <p>10 years experience</p>
+        </div> 
+         <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>Coding</h6>
+          <p>1 year experience</p>
+        </div>   
+
+        <!-- Add more skills here -->
+
+      </div>
+    </section>
+          
+<!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Emergency Response Optimization Project</h3>
+            <ul>
+              <li>Led initiatives to enhance emergency response efficiency and patient care across multiple jurisdictions</li>
+              <li>Participated in advanced rescue operations including aerial and underground extractions</li>
+              
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Multi-Unit Hospitality Operations Leadership Project</h3>
+            <ul>
+              <li>Managed three high-volume airport restaurant units simultaneously, overseeing a team of 30–35 staff members</li>
+              <li>Ensured operational excellence, budget compliance, and customer satisfaction in a fast-paced, high-security environment.</li>
+              <li>Handled financial operations including budgeting, invoicing, and HR reporting.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Full-Service Catering Brand Development</h3>
+            <ul>
+              <li>Co-founded and developed catering company into a successful business. Directed menu planning, event execution, staffing, and overall brand presentation for over 65 diverse events.</li>
+              <li>Delivered both formal and informal events with high client satisfaction.</li>
+                    </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+ <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Join or start a group software project (e.g., an open-source initiative or hackathon team). Focus on Scrum/Agile methodologies and take on a Scrum Master or team lead role to emphasize your coordination skills
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Focus on mastering backend technologies like Node.js, Express, SQL, and REST APIs. Build a few RESTful services, documenting your logic like a paramedic treatment plan
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Build a full stack app tailored to one of these domains (e.g., a fire drill scheduling system, EMS inventory tracker, or catering event manager).
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+</svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your Response</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
+
+
+
+
